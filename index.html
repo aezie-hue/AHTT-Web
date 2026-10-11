@@ -365,7 +365,7 @@ h3{margin:0 0 8px}
  */
 const EMAIL_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbynOPUuEMY1LC8FB369JKMSSKudtfETQ2gSBOjzmcplqPw3-4c5wotfS8S_NePRb9x2gQ/exec";
 const PRESENTATION_URL = "https://live.travelaht.com/aht";
-const RESERVATION_URL = "https://aezie-hue.github.io/aloha-hawaii-tiours-reserve-spot/";
+const RESERVATION_URL = "https://aezie-hue.github.io/aloha-hawaii-tiours-reserve-spot//";
 
 let selectedGift = "";
 let selectedEmail = "";
@@ -405,7 +405,7 @@ document.querySelectorAll(".gift").forEach(card=>{
 
 async function postToScript(data){
   if(!EMAIL_SCRIPT_URL ||
-     EMAIL_SCRIPT_URL.includes("https://script.google.com/macros/s/AKfycbynOPUuEMY1LC8FB369JKMSSKudtfETQ2gSBOjzmcplqPw3-4c5wotfS8S_NePRb9x2gQ/exec")){
+     EMAIL_SCRIPT_URL.includes("PASTE_YOUR_GOOGLE_APPS_SCRIPT")){
     throw new Error("The Apps Script URL has not been added to the HTML yet.");
   }
   await fetch(EMAIL_SCRIPT_URL,{
